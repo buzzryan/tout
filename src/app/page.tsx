@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="grow grid justify-center">
       <main className="flex flex-col gap-8 row-start-3 items-center sm:items-start">
-        <h1 className="text-4xl font-extrabold">Hello. It's me</h1>
+        <h1 className="text-4xl font-extrabold">Hello. It&apos;s me</h1>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Now we implement{" "}
