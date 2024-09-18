@@ -1,9 +1,10 @@
-import { cookies } from 'next/headers'
-
-export const tokenKey = "t"
+'use server'
+import {cookies} from 'next/headers'
+import dayjs from "dayjs";
+import {TOKEN_KEY} from "@/src/app/constant/common";
 
 export async function POST(request: Request) {
-     const formData = await request.formData()
+    const formData = await request.formData()
     const body = {
         username: formData.get("username"),
         password: formData.get("password"),
@@ -24,8 +25,8 @@ export async function POST(request: Request) {
     if (res.ok) {
         const result = await res.json()
         const cookieStore = cookies()
-        cookieStore.set(tokenKey, result.token)
-        return new Response("Success", { status: 200 })
+        cookieStore.set(TOKEN_KEY, result.token, {expires: dayjs().add(4, "weeks").toDate()})
+        return new Response("Success", {status: 200})
     }
-    return new Response("Failed", { status: 400 })
+    return new Response("Failed", {status: 400})
 }

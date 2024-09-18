@@ -1,8 +1,8 @@
 "use client"
 
 import {FormEvent} from "react";
-import {POST} from "@/app/constant/common";
-import {LoginForm} from "@/app/login/loginForm";
+import {POST} from "@/src/app/constant/common";
+import {LoginForm} from "@/src/app/login/loginForm";
 
 export default function Login() {
     const submitLogin = async(event: FormEvent<HTMLFormElement>) => {

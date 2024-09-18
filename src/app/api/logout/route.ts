@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers'
-import {tokenKey} from "@/app/api/login/route";
+import {TOKEN_KEY} from "@/src/app/constant/common";
 
 export async function POST() {
-    cookies().delete(tokenKey)
+    cookies().delete(TOKEN_KEY)
     return new Response("logout completed", { status: 200 })
 }
