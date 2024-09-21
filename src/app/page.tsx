@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {LogoutButton} from "@/src/component/logoutButton";
+import { LogoutButton } from "@/src/component/logoutButton";
 
 export default function Home() {
   return (
@@ -18,16 +18,16 @@ export default function Home() {
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a className="btn" href="/login">Login</a>
-          <LogoutButton/>
+          <a className="btn" href="/login">
+            Login
+          </a>
+          <LogoutButton />
         </div>
       </main>
       <footer className="row-start-4 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-        >
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app">
           <Image
             aria-hidden
             src="https://nextjs.org/icons/file.svg"
@@ -41,7 +41,7 @@ export default function Home() {
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
-        >
+          rel="noreferrer">
           <Image
             aria-hidden
             src="https://nextjs.org/icons/window.svg"
@@ -55,8 +55,7 @@ export default function Home() {
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://www.notion.so/browon/a3600d03edb24cd2a3b1a4818d1924a3"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           <Image
             aria-hidden
             src="https://nextjs.org/icons/globe.svg"
