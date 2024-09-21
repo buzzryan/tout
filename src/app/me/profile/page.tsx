@@ -71,7 +71,7 @@ export default function ProfilePage() {
       />
       <div className="avatar justify-center items-center pt-[30px]">
         <div className="rounded-full w-[150px] h-[150px]">
-          <Image src={profileImage} alt="profile" height="30" width="30" />
+          <Image src={profileImage} alt="profile" height="150" width="150" />
         </div>
       </div>
       <div className="flex flex-col items-center relative h-[14px]">
