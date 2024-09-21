@@ -14,6 +14,13 @@ export function Header({
 
   return path === "/login" ? null : (
     <header className="grid grid-cols-3 sticky h-[64px] top-0 border-solid border-b-[1px] border-slate-900/10 bg-white-100/80">
+      <div className="col-start-1 col-end-1 flex items-center">
+        {path === "/" ? null : (
+          <a className="btn-ghost btn ml-[0.5vw]" href="/">
+            Home
+          </a>
+        )}
+      </div>
       <div className="flex justify-end items-center col-start-3 col-end-3 pr-[2vw]">
         {hasTokenProp ? (
           <a className="avatar" href="/me/profile">
